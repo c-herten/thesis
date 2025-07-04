@@ -1,7 +1,7 @@
 # thesis
 
-├── install-packages.R
-├── data-processing.R
-├── methodology.R       
-├── data/                
+├── install-packages.R <br>
+├── data-processing.R <br>
+├── methodology.R <br>      
+├── data/ <br>               
 └── plots/     
