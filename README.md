@@ -1,17 +1,15 @@
-# **Causal Inference Approach of Educational Policy Effects**
+## **Causal Inference Approach of Educational Policy Effects**
 
 This repository implements causal inference methods for analyzing education policy impacts, focusing on early school leaving rates, completion rates and unemployment rates. The analysis employs Difference-in-Differences (DiD), Synthetic Control Methods (SCM) and Synthetic Difference-in-Differences (SDiD) to evaluate the policy Portugal introduced in 2009, which made upper secondary schooling mandatory.
 
-## **Installation**
+### **Installation**
 
-The analysis requires R version 4.3.2 or higher. Package dependencies are managed via "install-packages.R".
-
-This script includes a function that automatically sources and installs the specified libraries. The main packages used in the thesis are `fixest`, `Synth`, `synthdid` and `xsynthdid`.
+The analysis requires R version 4.3.2 or higher. The main packages used in the thesis are `fixest`, `Synth`, `synthdid` and `xsynthdid`.
 
 
-## **File Structure**
+### **File Structure**
 
-- **`install-packages.R`**: Dealing with package dependencies 
+- **`install-packages.R`**: Managing package dependencies 
 - **`data-processing.R`**: Cleaning, preparing and merging data  
 - **`methodology.R`**: Application of DiD, SCM and SDiD methods
 - **`create-plots.R`**: Generating visualizations and tables
@@ -19,7 +17,7 @@ This script includes a function that automatically sources and installs the spec
 - **`plots/`**: Generated figures and tables
 
 
-## **Replication**
+### **Replication**
 
 The analysis can be executed by running the scripts in the following sequence:
 
@@ -36,7 +34,7 @@ source("methodology.R")
 # 3. Generate visualizations and tables
 source("create-plots.R")
 ```
-## **References**
+### **References**
 
 [1] Arkhangelsky, D. (2019). synthdid: Synthetic Difference-in-Difference Estimation. https://github.com/synth-inference/synthdid
 
