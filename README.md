@@ -26,14 +26,15 @@ The analysis can be executed by running the scripts in the following sequence:
 # 1. Process data 
 source("data-processing.R")
 
-# This step can theoretically be skipped and the dataset, called `final_data.csv`, stored in the `data/` folder can be used right away for analysis.
-
 # 2. Run analysis
 source("methodology.R")
 
 # 3. Generate visualizations and tables
 source("create-plots.R")
 ```
+
+The first step can theoretically be skipped and the dataset, called `final_data.csv`, stored in the `data/` folder can be used right away for analysis.
+
 ### **References**
 
 [1] Arkhangelsky, D. (2019). synthdid: Synthetic Difference-in-Difference Estimation. https://github.com/synth-inference/synthdid
