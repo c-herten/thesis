@@ -1,6 +1,6 @@
 ## **Causal Inference Approach of Educational Policy Effects**
 
-This repository implements causal inference methods for analyzing education policy impacts, focusing on early school leaving rates, completion rates and unemployment rates. The analysis employs Difference-in-Differences (DiD), Synthetic Control Methods (SCM) and Synthetic Difference-in-Differences (SDiD) to evaluate the policy Portugal introduced in 2009, which made upper secondary schooling mandatory.
+This repository implements causal inference methods for analyzing education policy impacts, focusing on early school leaving rates, completion rates and unemployment rates. The analysis employs Difference-in-Differences (DiD), Synthetic Control Methods (SCM) and Synthetic Difference-in-Differences (SDiD) to evaluate the policy Portugal introduced in 2009, which made upper secondary schooling mandatory. Specifically, it applies DiD and SDiD to the aforementioned educational indicators and SCM to the unemployment outcomes. 
 
 ### **Installation**
 
