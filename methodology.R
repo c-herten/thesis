@@ -353,8 +353,6 @@ coeftest(pt_lt_model_esl_gdp_unemp_lin, vcov = vcov_NW(pt_lt_model_esl_gdp_unemp
 # but for this model spec, pretrends were only marginally insignificant at alpha 5%
 # so be cautious
 
-# since this only covariate spec with significant effect this model spec may be confounded
-
 
 # --- Synthetic Difference-in-Differences ----------------------------------------
 
@@ -559,15 +557,6 @@ cat("Unemployment only:    tau =", round(tau_hat_unemp, 4),
 cat("GDP + Unemployment:   tau =", round(tau_hat_with_cov, 4), 
     ", SE =", round(se_hat_with_cov, 4), 
     ", t =", round(t_stat_with_cov, 2), "\n")
-
-# plotting coefficients
-
-results_df <- data.frame(
-  specification = c("No covariates", "GDP per capita", "Unemployment rate", "GDP per capita + unemployment rate"),
-  estimate = c(-0.3346, -0.3233, -0.1877, -0.1885),
-  se = c(0.179, 0.2112, 0.130, 0.1645),
-  stringsAsFactors = FALSE
-)
 
 # --- Interpretation -----------------------------------------------------------
 
@@ -1522,7 +1511,7 @@ synthdid_placebo_plot(tau_hat_with_cov_comp)
 unemp_data <- data %>% 
   mutate(log_unemp = logit_transform(unemp_total))
 
-# --- Visualizations -----------------------------------------------------------
+# --- Visualizations ----
 
 # plot 1: Portugal + Spain, Italy, Greece, Austria, France
 ggplot(unemp_data %>% filter(country %in% c("Portugal", "Spain", "Italy", "Greece", "Austria", "France")),
