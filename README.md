@@ -35,14 +35,5 @@ source("create-plots.R")
 
 The first step can theoretically be skipped and the dataset, called `final_data.csv`, stored in the `data/` folder can be used right away for analysis.
 
-### **References**
-
-[1] Arkhangelsky, D. (2019). synthdid: Synthetic Difference-in-Difference Estimation. https://github.com/synth-inference/synthdid
-
-[2] Bergé, L. (2018). Efficient estimation of maximum likelihood models with multiple fixed-effects: The R package FENmlm. *CREA Discussion Papers*, (13).
-
-[3] Hainmueller, J., Diamond, A., & Abadie, A. (2011). Synth: An R Package for Synthetic Control Methods in Comparative Case Studies. *Journal of Statistical Software, 42*(13), 1-17. https://www.jstatsoft.org/v42/i13/
-
-[4] Kranz, S. (2021). xsynthdid: Simple function to adjust for covariates in synthdid. https://github.com/skranz/xsynthdid
 
 
